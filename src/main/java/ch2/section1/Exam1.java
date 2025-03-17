@@ -22,6 +22,7 @@ public class Exam1 {
     public static void main(String[] args) {
         Exam1 객체 = new Exam1();
         객체.카운트 = 20;
+        System.out.println(객체.카운트);
     }
 
 

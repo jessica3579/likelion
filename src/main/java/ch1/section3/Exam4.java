@@ -16,9 +16,10 @@ public class Exam4 {
      * 이 함수는 멋진 로그인을 처리하기 위한 함수입니다.
      */
     public void some1() {}
-//    void some2() {
-//
-//    }
+    void some2() {
+
+    }
+
 
     public static void main(String[] args) {
         System.out.println("주석 테스트입니다.");
@@ -27,3 +28,4 @@ public class Exam4 {
 
 // 개발이 완료된 후에 javadoc.exe를 이용해서 doc 파일을 만든다!
 // javadoc 명령은 java 파일이 있는 곳에서!!! .class가 아니라!
+

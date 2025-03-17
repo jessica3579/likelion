@@ -3,7 +3,8 @@ package ch2.section1;
 public class Exam5 {
     public static void main(String[] args) {
         final double PI = 3.1416;
-
+        Employee cal = new Employee();
+        cal.calBonus(2);
     }
 }
 
@@ -16,7 +17,7 @@ class Employee {
 
     // 코드의 명확성을 위해서 상수 변수를 선어해서 지정하는 것이 일반적
 
-    void calBonus() {
+    void calBonus(int department) {
         if(department == DEPARTMENT_SALE){
             System.out.println("연봉에 10을 곱함");
         } else if (department == DEPARTMENT_DEV){

@@ -13,6 +13,7 @@ public class Exam3 {
         short short1 = 17;
         int in1 = 120;
         long long1 = 10L; //long이라는 데이터라는 것을 명시적으로 표현하기 위해 데이터 뒤에 L 추가
+        long long2 = 2;
 
         // 자바에서 실수의 기본 타입은 double
         // 따라서 float로 쓰려면 f 붙여야함!

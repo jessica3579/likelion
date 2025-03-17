@@ -9,6 +9,8 @@ public class Exam3 {
             System.out.println(arg); // 출력
         }
     }
+
+
 }
 
 // class 파일이 위치하는 java/main 디렉토리에서 명령어 입력

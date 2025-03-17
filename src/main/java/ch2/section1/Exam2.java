@@ -16,7 +16,6 @@ public class Exam2 {
     boolean data5;
     String data6; // String 이라는 클래스로 선언한 객체
 
-
     void sayHello() {
         // data2 : 0, data3 : 0, data4 : 10
         System.out.println("data2: " + data2 + ", data3: " + data3 + ", data4: " + data4);
@@ -31,7 +30,8 @@ public class Exam2 {
         // System.out.println(data7); // error
         // data7++; // error
         data7 = 20;
-        System.out.print(data7);
+        System.out.println(data7++); // 20 : data 출력하고 난 후 1증가!!
+        System.out.print(data7); // 21
         data7++;
 
         // 변수가 이용되는 영역 (scope)
