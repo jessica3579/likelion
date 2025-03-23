@@ -2,8 +2,7 @@ package ch2.section3;
 
 public class Quiz2 {
     public static void main(String[] args) {
-        //int[] arr = {7, 44, 16, 32, 1, 22};
-        int[] arr = {98, 4, 16, 2, 13, 41};
+        int[] arr = {7, 44, 16, 32, 1, 22};
 
         // 정렬하여 출력
         // 출력 결과 : 1, 7, 16, 22, 32, 44
@@ -25,7 +24,7 @@ public class Quiz2 {
                 }
             }
         }
-
-        for(int i=0; i<arr.length; i++) System.out.print(arr[i] + " ");
+        for(int data : arr)
+            System.out.print(data + " ");
     }
 }
