@@ -31,10 +31,10 @@ class UniversityStudent extends Student {
     // 현 클래스 내에 동일 이름의 함수가 2개가 되는 것!!
 
     //public void method(){} // ok.. 상위의 접근 제한자 교체 가능!!
-    private void method(){} // error.. 오버라이드하면서 접근제한의 범위를 넓히는건 가능
+    //private void method(){} // error.. 오버라이드하면서 접근제한의 범위를 넓히는건 가능
     // 그렇지만 줄일수는 없음
 
-    int method(){return 0;} // error... return type 바꾸면 안됨
+    //int method(){return 0;} // error... return type 바꾸면 안됨
 }
 
 public class Exam7 {

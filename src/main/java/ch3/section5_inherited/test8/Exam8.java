@@ -17,14 +17,15 @@ final class Super{
     // 여기서 준비한 알고리즘으로만 쓰고 재정의는 하지 말라는 뜻
     final void method(){}
 }
-class Sub extends Super {
-    Sub(){
-        super(10, 20);
-    }
-//    @Override
-//    void method(){
-//        super.method();
+//class Sub extends Super {
+//    Sub(){
+//        super(10, 20);
 //    }
-}
+////    @Override
+////    void method(){
+////        super.method();
+////    }
+//}
+
 public class Exam8 {
 }

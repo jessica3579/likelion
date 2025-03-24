@@ -21,6 +21,7 @@ class Student {
         this.score = score;
     }
 }
+
 // 하위 클래스
 class HighStudent extends Student {
     int classNumber;
