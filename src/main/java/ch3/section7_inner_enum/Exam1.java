@@ -60,7 +60,7 @@ public class Exam1 {
             }
         };
 
-        MyInterface obj4 = new MyInterface(){
+        MyInterface obj4 = new MyInterface() {
             @Override
             public void interfaceFun() {
 
@@ -73,6 +73,7 @@ public class Exam1 {
 
             }
         });
+
 
     }
 }

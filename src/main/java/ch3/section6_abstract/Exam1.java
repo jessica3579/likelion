@@ -5,7 +5,6 @@ class Super1 { }
 abstract class Super2 {
     // 클래스가 추상형으로 선언되었고, 추상 함수가 없다... 상관 없다..
     // 이런 클래스는 의미 없음
-
 }
 
 //class Super3 {
@@ -16,7 +15,7 @@ abstract class Super2 {
 abstract class Super4 {
     //abstract  void  method1(){} // error - 추상형으로 선언된 함수는 body를 가질 수 없음
     abstract void method1();
-    // 클래스가 추상형이라고 하더라도 정상 함수 가능
+    // 클래스가 추상형이라고 하더라도 정상 함수 선언도 가능
     void method2(){}
 }
 
@@ -26,7 +25,7 @@ abstract class Sub extends Super4{ }
 class Sub2 extends Super4{
     // 상위의 추상 함수를 모두 오버라이드 해야함
     // 함수 재정의니까 자신에게 추상함수가 상속되지 않음
-    // 나는 추상함수를 가지지 않으므로 객체 생성 가능!!
+    // 이 클래스는 추상함수를 가지지 않으므로 객체 생성 가능!!
     @Override
     void method1() {
 
@@ -36,7 +35,7 @@ class Sub2 extends Super4{
 abstract class Student{
     String name;
     int score;
-    Student(String name, int score){
+    Student(String name, int score){ // 생성자
         this.name = name;
         this.score = score;
     }
@@ -53,6 +52,7 @@ abstract class Student{
         examSubmit();
     }
 }
+
 class HighStudent extends Student {
     HighStudent(String name, int score){
         super(name, score);

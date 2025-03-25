@@ -23,7 +23,7 @@ interface ITest1 {
         method5();
     }
 
-    // 클래스의 static 처럼 이름.함수명...
+    // 클래스의 static 처럼 이름.함수명...으로 접근
     static void method4(){
 
     }
@@ -40,7 +40,8 @@ interface ITest3 {
 }
 
 // 인터페이스를 선언하면서 다른 인터페이스를 상속받아 선언 가능
-// 인터페이스는 다중 상속이 가능
+// 인터페이스는 다중 상속이 가능, 인터페이스를 상속받은 인터페이스에서는 오버라이딩 강제가 아님!
+// 인터페이스를 구현한 인터페이스가 오버라이딩 강제!!!
 interface ITest4 extends ITest2, ITest3{
     void iTest4();
 }
@@ -93,16 +94,21 @@ public class Exam2 {
     public static void main(String[] args) {
         // Sub1 + 상속, 구현된거 다 사용가능! => 다형성
         Sub1 obj1 = new Sub1();
+        System.out.println(obj1 instanceof Sub1); // true
         // AbstractClass 타입으로 객체를 선언했다면.. AbstractClass에 선언된 멤버만 사용가능!!
         AbstractClass obj2 = new Sub1();
+        obj2.some1(); // some1만 가능!! abstractClass만 이용가능하므로!!
 
         // 인터페이스도 타입으로 이용가능
         // 타입으로만 사용가능! (ITest1만 사용 가능! )
         ITest1 obj3 = new Sub1();
+        obj3.method3(); // method3(); 는 default 메서드
+        ITest1.method4();  // method4(); 는 static 메서드
+        //obj3.method5(); // error - method5(); 는 private 메서드이므로
 
         // ITest4에 ITest2, ITest3까지 사용가능
         ITest4 obj4 = new Sub1();
-
+        // Object는 최상위 클래스이므로 가능한데 이렇게는 잘 안씀!!
         Object obj5 = new Sub1();
     }
 }

@@ -16,7 +16,6 @@ enum Direction2{
     Direction2(int price){
         this.price = price;
     }
-
 }
 
 // enum 상수에 개발자 함수를 추가해서..
@@ -60,6 +59,9 @@ public class Exam2 {
         Direction d1 = Direction.EAST;
         // 자동으로 enum 상수에 name, ordinal 등의 멤버  추가됨
         System.out.println(d1.name() + ", " + d1.ordinal()); // EAST, 2
+        Direction list[] = Direction.values(); // 배열 생성
+        for(Direction d : list)
+            System.out.println(d);
 
         Direction2 d2 = Direction2.WEST;
         System.out.println(d2.name() + ", " + d2.ordinal() + ", " + d2.price);
