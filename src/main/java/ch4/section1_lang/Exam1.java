@@ -1,20 +1,20 @@
 package ch4.section1_lang;
 
+// Object 클래스 함수!!
 class User { }
 
 class Student extends User {
     String name;
     int age;
-
     // 이 클래스는 Object의 서브 클래스!
     // Object 내에 toString() 함수가 있다
-    // Object 의 toSring()의 해시값 출력이다.
-    // 데이터가 중심이 클래스를 만들때.. (함수가 중심인 곳에서는 잘 안함)
+    // Object 의 toSring()는 해시값(=주소값) 출력이다.
+    // 데이터가 중심인 클래스를 만들때.. (함수가 중심인 곳에서는 잘 안함)
     // Object 의 toString()을 그대로 이용할 수도 있지만..
     // 자신이 override해서 자신의 데이터가 출력되게 재정의한다...
     // => 디버깅의 용이성을 위해..
     // 어떤 객체의 데이터가 어떻게 들어가 있지?를 확인하고 싶은 경우가 있다..
-    // System.out.println(obj.name + "," + obj.age + "," + .... );
+    // System.out.println(obj.name + "," + obj.age + "," + .... ); 하면 되긴 하지만 귀찮음
     // System.out.println(obj.toString()); 하면 데이터가 나오게끔..!
     @Override
     public String toString() {
@@ -55,5 +55,6 @@ public class Exam1 {
         Object obj = new User();
         Object obj1 = new String("hello");
         Object[] array = {new User(), new String()};
+
     }
 }
