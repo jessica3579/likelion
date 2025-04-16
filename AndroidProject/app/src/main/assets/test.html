@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style type="text/css">
+        body {
+        margin: 0px;
+        padding: 0px;
+        }
+
+        #container {
+        width: 95%%;
+        height: 300px;
+        margin: 8px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+</div>
+<script type="text/javascript" src="./libs/flotr2.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        const jsonString = android.getChartData();
+        const dataList = JSON.parse(jsonString);
+
+        console.log(dataList);
+
+        const chartData = dataList.map((item, index) => [index, parseInt(item.score)]);
+
+        // Graph
+        graph = Flotr.draw(document.getElementById("container"), [chartData], {
+            yaxis: {
+                min: 0,
+                max:100
+
+            },
+            points: {
+                show: true
+                },
+                lines:{
+                   show: true
+                }
+        });
+
+
+    })();
+</script>
+</body>
+</html>
